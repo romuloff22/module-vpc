@@ -6,7 +6,7 @@ resource "aws_vpc" "vpc-homo" {
   }
 }
 
-resource "aws_subnet" "subnet-homo1" {
+resource "aws_subnet" "subnet-homo" {
   vpc_id     = aws_vpc.vpc-homo.id
   cidr_block = "10.0.1.0/24"
 
@@ -37,7 +37,7 @@ resource "aws_route_table" "route_table" {
 }
 
 resource "aws_route_table_association" "rta" {
-  subnet_id      = aws_subnet.subnet-homo1.id
+  subnet_id      = aws_subnet.subnet-homo.id
   route_table_id = aws_route_table.route_table.id
 }
 

@@ -1,6 +1,6 @@
 output "subnet_id" {
   description = "Id da Subnet"
-  value       = aws_subnet.subnet-homo1.id
+  value       = aws_subnet.subnet-homo.id
 }
 
 output "security_group_id" {

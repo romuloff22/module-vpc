@@ -7,12 +7,12 @@ terraform {
     }
   }
 
-  backend "s3" {
+ /* backend "s3" {
     bucket = "remote-state-homolog"
     key    = "aws-vpc/terraform.tfstate"
     region = "us-east-2"
   }
-}
+}*/
 
 provider "aws" {
   region = "us-east-2"
